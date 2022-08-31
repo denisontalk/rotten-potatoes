@@ -39,6 +39,7 @@ kind: Deployment
 metadata:
   name: movies
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: movies
@@ -49,7 +50,7 @@ spec:
     spec:
       containers:
       - name: movies
-        image: fabricioveronez/rotten-potatoes:v1
+        image: denisonregistry.azurecr.io/rotten-potatoes:v1
         ports:
           - containerPort: 5000
         env:
