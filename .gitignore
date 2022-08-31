@@ -134,4 +134,5 @@ dmypy.json
 
 terraform/.terraform/
 terraform/.terraform.lock.hcl
-terraform/teste.txt
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
